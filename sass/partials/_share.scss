@@ -1,0 +1,54 @@
+.share {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.picture-person {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.name {
+  flex-basis: 35%;
+  text-align: start;
+}
+
+.button-share {
+  flex-basis: 35%;
+  text-align: end;
+  padding: 0 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 1;
+}
+
+.name-avatar {
+  flex-shrink: 1;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: $VeryDarkGrayishBlue;
+}
+
+.data {
+  font-size: 10px;
+  color: $DesaturatedDarkBlue;
+}
+
+.btn {
+  flex-shrink: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $LightGrayishBlue;
+  border: none;
+}
+
+.fa-share {
+  font-size: 20px;
+  color: $VeryDarkGrayishBlue;
+}
