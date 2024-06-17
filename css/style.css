@@ -11,8 +11,8 @@ body {
 
 .wrapper {
   width: 90%;
-  height: 80%;
-  margin: 40px auto;
+  height: 78%;
+  margin: 60px auto;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .main-body {
-  height: 44%;
+  height: 45%;
   padding: 50px 30px;
 }
 
@@ -57,7 +57,6 @@ body {
   justify-content: space-around;
   align-items: center;
   border-radius: 0 0 15px 15px;
-  padding: 10px 0;
 }
 
 .picture-person {
@@ -96,7 +95,6 @@ body {
 }
 
 .btn {
-  flex-shrink: 2;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -115,17 +113,49 @@ body {
   align-items: center;
   background-color: hsl(217, 19%, 35%);
   border-radius: 0 0 15px 15px;
-  padding: 17px 0;
+  padding: 15px 0;
 }
 
 .text-share {
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Manrope", sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: hsl(214, 17%, 51%);
 }
 
+.icon {
+  font-size: 22px;
+  padding-right: 15px;
+  color: #fff;
+}
+
+.active-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: hsl(214, 17%, 51%);
+  border: none;
+}
+
+.active-share-btn {
+  font-size: 20px;
+  color: #fff;
+}
+
 .hide {
   display: none;
+}
+
+@keyframes entry {
+  from {
+    position: absolute;
+    left: -85%;
+    width: 50%;
+  }
+  to {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
 }

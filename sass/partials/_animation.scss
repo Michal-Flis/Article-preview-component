@@ -1,0 +1,13 @@
+@keyframes entry {
+  from {
+    position: absolute;
+    left: -85%;
+    width: 50%;
+  }
+
+  to {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,13 +1,18 @@
 const btn = document.querySelector('.btn');
-const wrapper = document.querySelector('.wrapper');
+const activeBtn = document.querySelector('.active-btn');
+const share = document.querySelector('.share');
+const activeShare = document.querySelector('.active-share');
 
 btn.addEventListener('click', () => {
-  const div = document.createElement('div');
-  const span = document.createElement('span');
+  share.classList.toggle('hide');
+  activeShare.classList.toggle('hide');
 
-  div.classList.add('window');
-  span.classList.add('rotate');
+  activeShare.style.animation = 'entry .5s 1 linear';
+});
 
-  wrapper.appendChild(div);
-  wrapper.appendChild(span);
+activeBtn.addEventListener('click', () => {
+  share.classList.toggle('hide');
+  activeShare.classList.toggle('hide');
+
+  share.style.animation = 'entry .5s linear';
 });
