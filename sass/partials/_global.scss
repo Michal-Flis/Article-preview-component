@@ -9,10 +9,13 @@ body {
   height: 100vh;
   }
 
-  .wrapper {
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     width: 90%;
     height: 78%;
-    margin: 60px auto;
     border-radius: 15px;
     background-color: #fff;
 }
@@ -24,4 +27,11 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }

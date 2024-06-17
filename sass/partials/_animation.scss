@@ -1,8 +1,36 @@
-@keyframes entry {
+@keyframes entry320 {
   from {
     position: absolute;
-    left: -85%;
-    width: 50%;
+    left: -130%;
+    width: 100%;
+  }
+
+  to {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@keyframes entry375 {
+  from {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+  }
+
+  to {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@keyframes entry768 {
+  from {
+    position: absolute;
+    left: -100%;
+    width: 100%;
   }
 
   to {
