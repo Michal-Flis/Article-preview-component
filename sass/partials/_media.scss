@@ -63,6 +63,14 @@
     line-height: 20px;
   }
 
+  .name-avatar {
+    font-size: 18px;
+  }
+
+  .data {
+    font-size: 15px;
+  }
+
   .btn {
     cursor: pointer;
   }
@@ -72,7 +80,7 @@
   }
 
   .active-desktop {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     position: absolute;
@@ -97,6 +105,7 @@
   }
 
   .tail {
+    display: none;
     position: absolute;
     bottom: 23%;
     right: 4%;
@@ -105,5 +114,144 @@
     transform: rotate(45deg);
     background-color: $VeryDarkGrayishBlue;
     z-index: -1;
+  }
+.active-desktop-btn {
+  display: flex;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+  .main-text {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .name-avatar {
+    font-size: 25px;
+  }
+
+  .data {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 55px;
+    height: 55px;
+  }
+
+  .fa-share {
+    font-size: 25px;
+  }
+
+  .active-desktop {
+    bottom: 25%;
+    right: -7%;
+    width: 25%;
+    height: 12%;
+    padding: 15px;
+  }
+
+  .desktop-text {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .tail {
+    right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .main-text {
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .name-avatar {
+    font-size: 35px;
+  }
+
+  .data {
+    font-size: 25px;
+  }
+
+  .btn {
+    width: 75px;
+    height: 75px;
+  }
+
+  .tail {
+    right: 4%;
+  }
+
+  .desktop-text {
+    font-size: 15px;
+  }
+
+  .icon-desktop {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 2250px) {
+  .wrapper {
+    height: 55%;
+  }
+
+  .main-text {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .name-avatar {
+    font-size: 40px;
+  }
+
+  .data {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 85px;
+    height: 85px;
+  }
+
+  .active-desktop {
+    bottom: 24%;
+  }
+
+  .desktop-text {
+    font-size: 20px;
+  }
+
+  .icon-desktop {
+    font-size: 35px;
   }
 }
