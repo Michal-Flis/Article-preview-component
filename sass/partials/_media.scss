@@ -1,13 +1,13 @@
 @media only screen and (min-width: 375px) {
   .wrapper {
     width: 80%;
-    height: 80%;
+    height: 61%;
   }
 }
 
 @media only screen and (min-width: 425px) {
   .wrapper {
-    height: 84%;
+    height: 64%;
   }
 
   .main-body {
@@ -19,7 +19,7 @@
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 50%;
-    height: 88%;
+    height: 67%;
   }
 
   .main-body {
@@ -207,6 +207,9 @@
   .icon-desktop {
     font-size: 25px;
   }
+.active-desktop {
+  bottom: 24%;
+}
 }
 
 @media only screen and (min-width: 2250px) {
@@ -240,11 +243,6 @@
     width: 85px;
     height: 85px;
   }
-
-  .active-desktop {
-    bottom: 24%;
-  }
-
   .desktop-text {
     font-size: 20px;
   }
