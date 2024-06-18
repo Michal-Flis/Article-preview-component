@@ -14,6 +14,8 @@ btn.addEventListener('click', () => {
       activeShare.style.animation = 'entry320 .5s 1 linear';
     } else if (screen.width === 375) {
       activeShare.style.animation = 'entry375 .5s 1 linear';
+    } else if (screen.width === 425) {
+      activeShare.style.animation = 'entry375 .5s 1 linear';
     } else if (screen.width === 768) {
       activeShare.style.animation = 'entry768 .5s 1 linear';
     }
@@ -31,7 +33,9 @@ activeBtn.addEventListener('click', () => {
     share.style.animation = 'entry320 .5s linear';
   } else if (screen.width === 375) {
     share.style.animation = 'entry375 .5s linear';
-  } else if (screen.width) {
-    share.style.animation = 'entry .5s linear';
+  } else if (screen.width === 425) {
+    share.style.animation = 'entry375 .5s linear';
+  } else if (screen.width === 768) {
+    share.style.animation = 'entry768 .5s linear';
   }
 });
