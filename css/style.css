@@ -7,15 +7,13 @@
 body {
   background: hsl(210, 46%, 95%);
   height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 60%;
+  max-width: 320px;
+  height: auto;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -47,28 +45,30 @@ footer {
 
 .head-picture {
   width: 100%;
-  height: 30%;
+  height: 30vh;
   border-radius: 15px 15px 0 0;
 }
 
-.main-body {
-  height: 45%;
-  padding: 50px 30px;
-}
-
 .main-text {
-  font-size: 14px;
+  font-size: 1.1em;
   font-family: "Manrope", sans-serif;
   font-weight: bold;
-  margin-bottom: 15px;
   color: hsl(217, 19%, 35%);
+  padding: 1em 1.5em 0 1.5em;
 }
 
 .text {
-  font-size: 13px;
+  font-size: 0.8em;
   font-family: "Manrope", sans-serif;
-  line-height: 15px;
+  line-height: 1.2em;
   color: hsl(214, 17%, 51%);
+  padding: 1em 1.8em 3em 1.8em;
+}
+
+.share-container {
+  position: relative;
+  height: 60px;
+  overflow: hidden;
 }
 
 .share {
@@ -91,7 +91,7 @@ footer {
 .button-share {
   flex-basis: 35%;
   text-align: end;
-  padding: 0 20px;
+  padding-right: 1em;
 }
 
 .avatar {
@@ -166,19 +166,7 @@ footer {
   display: none;
 }
 
-@keyframes entry320 {
-  from {
-    position: absolute;
-    left: -130%;
-    width: 100%;
-  }
-  to {
-    position: absolute;
-    left: 0;
-    width: 100%;
-  }
-}
-@keyframes entry375 {
+@keyframes entry {
   from {
     position: absolute;
     left: -100%;
@@ -188,80 +176,53 @@ footer {
     position: absolute;
     left: 0;
     width: 100%;
-  }
-}
-@keyframes entry768 {
-  from {
-    position: absolute;
-    left: -100%;
-    width: 100%;
-  }
-  to {
-    position: absolute;
-    left: 0;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 375px) {
-  .wrapper {
-    width: 80%;
-    height: 61%;
-  }
-}
-@media only screen and (min-width: 425px) {
-  .wrapper {
-    height: 64%;
-  }
-  .main-body {
-    height: 42%;
-    padding: 55px 30px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    width: 50%;
-    height: 67%;
-  }
-  .main-body {
-    height: 40%;
-    padding: 60px 30px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body {
-    max-height: 100vh;
-  }
   .wrapper {
     display: flex;
-    width: 80%;
-    height: 50%;
+    max-width: 940px;
+    height: 400px;
+  }
+  .head {
+    width: 40%;
+    height: 400px;
+  }
+  .head-picture {
+    height: 400px;
+    border-radius: 15px 0 0 15px;
   }
   .desktop {
     width: 60%;
   }
-  .head-picture {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
+  .share-container {
+    overflow: visible;
   }
   .main-body {
-    height: 78%;
-    padding: 30px;
+    height: 100%;
   }
   .main-text {
-    font-size: 23px;
+    font-size: 1.5em;
+    padding: 1em 1.5em 0 1.5em;
   }
   .text {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1.2em;
+    padding: 1em 1.8em 4.5em 1.8em;
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
   }
   .name-avatar {
-    font-size: 18px;
+    font-size: 20px;
   }
   .data {
     font-size: 15px;
   }
   .btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   .btn:hover {
@@ -271,141 +232,33 @@ footer {
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    bottom: 25%;
-    right: -5%;
-    width: 20%;
-    height: 10%;
-    padding: 15px;
-    border-radius: 10px;
+    bottom: 130%;
+    right: -100%;
+    width: 18em;
+    padding: 0.8em 1em;
+    border-radius: 15px;
     background-color: hsl(217, 19%, 35%);
   }
   .desktop-text {
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: hsl(212, 23%, 69%);
   }
   .icon-desktop {
+    font-size: 18px;
     color: #fff;
   }
   .tail {
     position: absolute;
-    bottom: 23%;
-    right: 4%;
+    bottom: 55px;
+    right: 30px;
     width: 20px;
     height: 20px;
     transform: rotate(45deg);
     background-color: hsl(217, 19%, 35%);
-    z-index: -1;
   }
   .active-desktop-btn {
     display: flex;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .main-text {
-    font-size: 30px;
-  }
-  .text {
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .avatar {
-    width: 70px;
-    height: 70px;
-  }
-  .name-avatar {
-    font-size: 25px;
-  }
-  .data {
-    font-size: 20px;
-  }
-  .btn {
-    width: 55px;
-    height: 55px;
-  }
-  .fa-share {
-    font-size: 25px;
-  }
-  .active-desktop {
-    bottom: 25%;
-    right: -7%;
-    width: 25%;
-    height: 12%;
-    padding: 15px;
-  }
-  .desktop-text {
-    font-size: 12px;
-    letter-spacing: 3px;
-  }
-  .tail {
-    right: 5%;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  .main-text {
-    font-size: 40px;
-  }
-  .text {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .avatar {
-    width: 90px;
-    height: 90px;
-  }
-  .name-avatar {
-    font-size: 35px;
-  }
-  .data {
-    font-size: 25px;
-  }
-  .btn {
-    width: 75px;
-    height: 75px;
-  }
-  .tail {
-    right: 4%;
-  }
-  .desktop-text {
-    font-size: 15px;
-  }
-  .icon-desktop {
-    font-size: 25px;
-  }
-  .active-desktop {
-    bottom: 24%;
-  }
-}
-@media only screen and (min-width: 2250px) {
-  .wrapper {
-    height: 55%;
-  }
-  .main-text {
-    font-size: 50px;
-  }
-  .text {
-    font-size: 35px;
-    line-height: 40px;
-  }
-  .avatar {
-    width: 110px;
-    height: 110px;
-  }
-  .name-avatar {
-    font-size: 40px;
-  }
-  .data {
-    font-size: 30px;
-  }
-  .btn {
-    width: 85px;
-    height: 85px;
-  }
-  .desktop-text {
-    font-size: 20px;
-  }
-  .icon-desktop {
-    font-size: 35px;
   }
 }

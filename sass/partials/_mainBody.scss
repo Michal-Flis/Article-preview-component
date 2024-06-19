@@ -1,19 +1,15 @@
-.main-body {
-  height: 45%;
-  padding: 50px 30px;
-}
-
 .main-text {
-  font-size: 14px;
+  font-size: 1.1em;
   font-family: $manrope;
   font-weight: bold;
-  margin-bottom: 15px;
   color: $VeryDarkGrayishBlue;
+  padding: 1em 1.5em 0 1.5em;
 }
 
 .text {
-  font-size: 13px;
+  font-size: 0.8em;
   font-family: $manrope;
-  line-height: 15px;
+  line-height: 1.2em;
   color: $DesaturatedDarkBlue;
+  padding: 1em 1.8em 3em 1.8em;
 }
